@@ -1,0 +1,74 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+h1{
+    background-color: blue;
+    color:white;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 5rem;
+    line-height: 5rem;
+}
+
+/* For rock, paper and scissors */
+
+.choices{
+    display: flex;
+    gap: 3rem;
+    margin-top: 5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.choice{
+    height: 165px;
+    width: 165px;
+}
+
+.choice:hover{
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+img{
+    height: 150px;
+    width: 150px;
+    border: 3px solid white;
+    border-radius: 50%;
+    object-fit:cover;
+}
+
+/* Score Board */
+
+.score-board{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    margin-top: 3rem;
+    gap: 5rem;
+}
+
+#user-score, #comp-score{
+    font-size: 5rem;
+}
+
+.msg-container{
+    margin-top: 5rem;
+}
+
+#msg{
+    background-color: white;
+    color: black;
+    font-size: 2rem;
+    display:inline;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
