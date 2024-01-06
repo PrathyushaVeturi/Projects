@@ -7,6 +7,7 @@ const msg = document.querySelector("#msg");
 const userScorePara = document.querySelector("#user-score");   // to access the count of the user score
 const compScorePara = document.querySelector("#comp-score");   // to access the count of the comp score
 
+const restart = document.querySelector("#re-start");  //to access the restart option...
 
 //generating the computer choice...
 const genCompChoice = () => {
@@ -88,4 +89,15 @@ choices.forEach((choice) => {
         //calling playGame function which is the main function... it takes the userChoice as the parameter...
         playGame(userChoice);
     });
+});
+
+
+restart.addEventListener("click", () => {
+    userScore = 0;
+    compScore = 0;
+    userScorePara.innerText = userScore;
+    compScorePara.innerText = compScore;
+    msg.innerHTML = "Start Again!";
+    msg.style.backgroundColor= "black";
+    msg.style.color="purple";
 });

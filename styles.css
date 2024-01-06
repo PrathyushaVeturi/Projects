@@ -64,11 +64,24 @@ img{
 }
 
 #msg{
-    background-color: white;
-    color: black;
+    color:aqua;
     font-size: 2rem;
     display:inline;
     padding: 1rem;
     border-radius: 1rem;
 }
 
+.restart{
+    margin-top: 5rem;
+    opacity: 0.5;
+}
+
+#re-start{
+    font-size: 2rem;
+    display: inline;
+}
+
+.restart:hover{
+    cursor: pointer;
+    opacity: 1;
+}
